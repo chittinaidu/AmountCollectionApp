@@ -1,0 +1,10 @@
+{% extends 'main/index.html'%}
+{%  block content%}
+
+<h4>Donate Amount Here </h4>
+<form method="post">
+{% csrf_token %}
+{{ form.as_p}}
+</form>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'main/index.html'%}
+{%  block content%}
+
+
+<h2>Welcome to KORLAM village youth on the ospicious  occuation of <font color="#0000b3">"ASRIAMMATALLI FESTIVALS"</font> we are going to collect amount from our youth,so please participate and donate your amount here .....</h2>
+
+
+
+<h4><a href="/donateamount_create">CLICK HERE FOR DONATIONS</a></h4>
+ 
+<table border="4", align="center">
+
+	
+	<tfoot>
+	<tr>
+	   <td>TOTAL AMOUNT</td>
+	   <td>{{ obj.amount }}</td>
+	   
+	</tr>
+	</tfoot>
+
+	 
+
+		<th>pic</th>
+		<th>name</th>
+		<th>amount</th>
+		<th>type</th>
+		<th>date</th>
+		<th>user</th>
+		<th>Operation</th>
+		
+
+		
+	</tr>
+	{% for obj in object_list %}
+	
+
+	 
+		<td><img src="/media/{{obj.pic}}" width=110 height=100></td>
+		
+		<td>{{ obj.name }}</td>
+		 
+		<td>{{ obj.amount }}</td>
+		<td>{{ obj.type }}</td>
+		<td>{{ obj.date }}</td>
+		<td>{{ obj.user }}</td>
+
+		
+		<td>
+		   
+        
+		    <a href="/donateamount_update/{{obj.id}}">UPDATE</a>
+		    
+			
+			<a href="/donateamount_delete/{{obj.id}}">DELETE</a>
+			
+			
+			<a href="/donateamount_payment_payment{{obj.id}}">PAYMENT</a>
+			
+		</td>
+		
+           
+
+
+
+		  
+	
+	</tr>
+  {% endfor %}
+  
+</table>
+
+{% endblock %} 

@@ -1,0 +1,16 @@
+pandgulu amount collecting
+------------------------------------------
+
+About project: We have to create a front end page with login page and registration page ,
+                after registeration we should login and we have to add money details like candidate name, amount ,created date 
+                after this if we want to update and delete buttons  
+
+Agenda:
+       To create a front end page with LOGIN PAGE , REGISTER LINK ,RESET ,VIEW DETAILS
+
+       LOGIN PAGE:username:
+                  password:
+
+       REGISTER PAGE: CANDIDATE NAME:
+                      AMOUNT:
+                      CREATED DATE:
